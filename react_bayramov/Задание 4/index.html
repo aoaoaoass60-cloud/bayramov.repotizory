@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/jsx">
+    const root = ReactDOM.createRoot(document.querySelector('#root'));
+    root.render(
+        <div className='content'>
+            <div className='item'>Первый элемент</div>
+            <div className='item' style={{ borderRadius: '30px' }}>Второй элемент</div>
+            <div className='item' style={{ borderRadius: '50%' }}>Третий элемент</div>
+        </div>
+    );
+</script>
+</body>
+</html>
+<style>
+    .content {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+    }
+    .item {
+        width: 100px;
+        height: 100px;
+        background: #4A90D9;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>

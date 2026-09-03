@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/jsx">
+    const poemClass = "poem poem-classic";
+    const color = "зеленый";
+    const metalType = "Златая";
+    const animal = "кот";
+    const route = "кругом";
+
+    const root = ReactDOM.createRoot(document.querySelector('#root'));
+    root.render(
+        <div className={poemClass}>
+            <p>У лукоморья дуб {color};</p>
+            <p>{metalType} цепь на дубе том:</p>
+            <p>И днём и ночью {animal} учёный</p>
+            <p>Всё ходит по цепи {route};</p>
+        </div>
+    );
+</script>
+</body>
+</html>
