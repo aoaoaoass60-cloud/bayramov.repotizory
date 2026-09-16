@@ -1,0 +1,66 @@
+.section {
+    width: 600px;
+    max-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.scroll {
+    overflow-y: auto;
+    padding-right: 8px;
+}
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 24px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 240px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+.price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.price p {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.name {
+    text-align: center;
+    margin: 0;
+    min-height: 48px;
+}
+
+.counter {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
