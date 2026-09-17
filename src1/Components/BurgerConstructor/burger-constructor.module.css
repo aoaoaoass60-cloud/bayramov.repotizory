@@ -1,0 +1,53 @@
+.section {
+    width: 600px;
+    max-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 10px auto;
+    padding-top: 100px;
+}
+
+/* Скролл-контейнер для ингредиентов */
+.scroll {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+/* Скроллбар */
+.scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll::-webkit-scrollbar-track {
+    background: #2f2f37;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background: #8585ad;
+    border-radius: 4px;
+}
+
+/* Итог: цена + кнопка */
+.total {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+/* Цена */
+.price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    color: #f2f2f3;
+}
